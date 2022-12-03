@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:40");
 *{
     margin: 0px;
     padding: 0px;
@@ -9,7 +10,7 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 li {
     list-style: none;
@@ -138,3 +139,22 @@ li {
     font-size: 30px;
     color: rgb(234, 241, 241);
 }
+
+/*Text Animation Start*/
+.text-bg{
+    position: relative;
+    bottom: -240px;
+    right: -1330px;
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
+    font-size: 50px;
+    white-space: nowrap;
+}
+.blinking-cursor {
+    user-select: none;
+    animation: blink 1s steps(2, start) infinite; }
+  
+  @keyframes blink {
+    to {
+      visibility: hidden; } }
+  
